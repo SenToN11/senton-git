@@ -84,6 +84,27 @@
         </section>
     </header>
     <main>
+        <div class="modal modal--call">  
+            <form action="#" class="modal__form">
+            <h3 class="modal__title">Оставьте заявку:</h3>
+                <label class="modal__option">Имя
+                    <input type="text" class="modal__area modal__area--name">
+                </label>
+                <label  class="modal__option">Номер телефона
+                    <input type="number" class="modal__area modal__area--number">
+                </label>
+                <label  class="modal__option modal__option--mail">Ваша почта
+                    <input type="email" class="modal__area modal__area--mail">
+                </label>
+                <label  class="modal__option modal__option--textarea">Описание проэкта
+                    <textarea class="modal__area modal__area--textarea"></textarea>
+                </label>
+                <div class="modal__buttons">
+                    <button type="submit" class="modal__submit">Отправить</button>
+                    <button class="modal__remove">Отмена</button>
+                </div>
+            </form>
+        </div> 
         <section class="section">
             <div class="container">
                 <h3 class="section__title">Что я делаю</h3>

@@ -37,4 +37,37 @@ $(document).ready(function(){
 
 
     })
+
+    $('.section__button--second, .button-first__size').click(function(event){
+      $('.modal').show('.active');
+      $('.modal__option--mail').css('display','none');
+      $('.modal__option--textarea').css('display','flex');
+    })
+
+    $('.message__button, .details__button, .social__button').click(function(event){
+      $('.modal__option--mail').css('display','flex');
+      $('.modal__option--textarea').css('display','none');
+      $('.modal--call').show('.active');
+    })
+
+    $('.modal__submit').click(function(event){
+      event.preventDefault(event);
+      $('.modal').hide('.active');
+    })
+
+    $('.modal__remove').click(function(event){
+      event.preventDefault(event);
+      $('.modal').hide('.active');
+    })
 })
+
+$(function($){
+	$(document).mouseup(function (e){ 
+		var poppup = $(".modal"); 
+		if (!poppup.is(e.target) 
+		    && poppup.has(e.target).length === 0) { 
+			poppup.hide(); 
+		}
+	});
+});
+
