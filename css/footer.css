@@ -52,6 +52,7 @@
     border: 1px solid #f82370;
     color: #f53f4f;
     font-size: 17px;
+    transition: 1.5s;
 }
 
 .social__button:hover {

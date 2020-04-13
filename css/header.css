@@ -72,6 +72,7 @@
     color: #f53f4f;
     bottom: 12px;
     font-size: 17px;
+    transition: 1.5s;
 }
 
 .message__button:hover {
@@ -183,6 +184,7 @@
     border: 1px solid #ff4e2e;
     color: #fff;
     font-size: 18px;
+    transition: 1.5s;
 }
 
 .all-button:hover {
@@ -197,6 +199,11 @@
     right: -81px;
     bottom: -4px;
 }
+
+.elipse__mob {
+    display: none;
+}
+
 
 
 
@@ -400,10 +407,6 @@
         padding: 0;
     }
 
-    .main-header__burger.active::after {
-        bottom: -5px;
-    }
-
     .main-header__burger {
         width: 25px;
         height: 16px;
@@ -419,7 +422,9 @@
         height: 2px;
     }
 
-
+    .main-header__burger.active:before {
+        top: 4px;
+    }
 
     .message__phone {
         font-size: 18px;

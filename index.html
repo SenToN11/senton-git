@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дипломный проэкт</title>
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script-dist.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -43,9 +38,9 @@
                 </div>
                 <nav>
                     <ul class="main-header__list">
-                        <li class="main-header__item"><a class="link" href="#">Услуги</a></li>
-                        <li class="main-header__item"><a class="link"  href="#">Портфолио</a></li>
-                        <li class="main-header__item"><a class="link"  href="#banner__body">Стоимость</a></li>
+                        <li class="main-header__item main-header__item--1"><a class="link" href="#">Услуги</a></li>
+                        <li class="main-header__item main-header__item--2"><a class="link"  href="#">Портфолио</a></li>
+                        <li class="main-header__item main-header__item--3"><a class="link"  href="#banner__body">Стоимость</a></li>
                     </ul>
                 </nav>
                 <div class="main-header__message message">
@@ -84,30 +79,9 @@
         </section>
     </header>
     <main>
-        <div class="modal modal--call">  
-            <form action="#" class="modal__form">
-            <h3 class="modal__title">Оставьте заявку:</h3>
-                <label class="modal__option">Имя
-                    <input type="text" class="modal__area modal__area--name">
-                </label>
-                <label  class="modal__option">Номер телефона
-                    <input type="number" class="modal__area modal__area--number">
-                </label>
-                <label  class="modal__option modal__option--mail">Ваша почта
-                    <input type="email" class="modal__area modal__area--mail">
-                </label>
-                <label  class="modal__option modal__option--textarea">Описание проэкта
-                    <textarea class="modal__area modal__area--textarea"></textarea>
-                </label>
-                <div class="modal__buttons">
-                    <button type="submit" class="modal__submit">Отправить</button>
-                    <button class="modal__remove">Отмена</button>
-                </div>
-            </form>
-        </div> 
         <section class="section">
             <div class="container">
-                <h3 class="section__title">Что я делаю</h3>
+                <h3 id="my-works" class="section__title">Что я делаю</h3>
                 <ul class="section__list">
                     <li class="section__item first-item">Вёрстка лендинг–страниц
                         и&nbsp;сайтов любой сложности</li>
@@ -125,7 +99,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h3 class="section__title">Примеры моих работ</h3>
+                <h3 id="portfolio" class="section__title">Примеры моих работ</h3>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -146,7 +120,7 @@
                 <div class="swiper-button-prev arrow__shadow"></div>
                 <div class="swiper-button-next arrow__shadow"></div>
                 <div class="section__button button-second">
-                    <button class="all-button" type="submit">Заказать проект</button>
+                    <button class="all-button section__button--second" type="submit">Заказать проект</button>
                 </div>
             </div>
         </section>
@@ -200,5 +174,27 @@
             &copy; Дмитрий Алексеев, 2016 – 2018
         </p>
     </footer>
+    <div class="modal modal--call">  
+        <form action="#" class="modal__form">
+        <h3 class="modal__title">Оставьте заявку:</h3>
+            <label class="modal__option">Имя
+                <input type="text" class="modal__area modal__area--name">
+            </label>
+            <label  class="modal__option">Номер телефона
+                <input type="number" class="modal__area modal__area--number">
+            </label>
+            <label  class="modal__option modal__option--mail">Ваша почта
+                <input type="email" class="modal__area modal__area--mail">
+            </label>
+            <label  class="modal__option modal__option--textarea">Описание проэкта
+                <textarea class="modal__area modal__area--textarea"></textarea>
+            </label>
+            <div class="modal__buttons">
+                <button type="submit" class="modal__submit">Отправить</button>
+                <button class="modal__remove">Отмена</button>
+            </div>
+        </form>
+    </div> 
+    <div class="modal-overlay"></div>
 </body>
 </html>
