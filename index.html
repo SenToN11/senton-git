@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дипломный проэкт</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-500.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/modernizr-custom-dist.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/script-dist.js"></script>
 </head>
+
 <body>
     <header class="main-header">
         <div class="main-header__ellipse">
             <svg xmlns="http://www.w3.org/2000/svg" width="814" height="630" viewBox="0 0 814 630">
                 <defs>
-                    <linearGradient id="g2gka" x1="371.97" x2="548.51" y1="763.68" y2=".74" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#ff8f5a"/>
-                        <stop offset=".99" stop-color="#ff2f96"/>
-                        <stop offset="1" stop-color="#ff2f96"/>
+                    <linearGradient id="g2gka" x1="371.97" x2="548.51" y1="763.68" y2=".74"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ff8f5a" />
+                        <stop offset=".99" stop-color="#ff2f96" />
+                        <stop offset="1" stop-color="#ff2f96" />
                     </linearGradient>
                 </defs>
                 <g>
                     <g clip-path="url(#clip-2)">
-                        <path fill="#6055c4" d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z"/>
-                        <path fill="url(#g2gka)" d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z"/>
+                        <path fill="#6055c4"
+                            d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z" />
+                        <path fill="url(#g2gka)"
+                            d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z" />
                     </g>
                 </g>
             </svg>
@@ -39,8 +48,9 @@
                 <nav>
                     <ul class="main-header__list">
                         <li class="main-header__item main-header__item--1"><a class="link" href="#">Услуги</a></li>
-                        <li class="main-header__item main-header__item--2"><a class="link"  href="#">Портфолио</a></li>
-                        <li class="main-header__item main-header__item--3"><a class="link"  href="#banner__body">Стоимость</a></li>
+                        <li class="main-header__item main-header__item--2"><a class="link" href="#">Портфолио</a></li>
+                        <li class="main-header__item main-header__item--3"><a class="link"
+                                href="#banner__body">Стоимость</a></li>
                     </ul>
                 </nav>
                 <div class="main-header__message message">
@@ -51,14 +61,14 @@
                     </a>
                 </div>
             </div>
-        </div>    
+        </div>
         <section class="main-header__body">
-                <div class="main-header__fly fly-first">{ }</div>
-                <div class="main-header__fly fly-second">#</div>
-                <div class="main-header__fly fly-third">&lt;/&gt;</div>
-                <div class="main-header__fly fly-fourth">&lt;div&gt;</div>
-                <div class="main-header__fly fly-fifth">&lt;div&gt;</div>
-                <div class="main-header__fly fly-six">&lt;/&gt;</div>
+            <div class="main-header__fly fly-first">{ }</div>
+            <div class="main-header__fly fly-second">#</div>
+            <div class="main-header__fly fly-third">&lt;/&gt;</div>
+            <div class="main-header__fly fly-fourth">&lt;div&gt;</div>
+            <div class="main-header__fly fly-fifth">&lt;div&gt;</div>
+            <div class="main-header__fly fly-six">&lt;/&gt;</div>
             <div class="container">
                 <div class="main-header__content header-content">
                     <div class="header-content__picture">
@@ -107,11 +117,11 @@
                             <h4 class="slide__title">Сайт психолога Веры Антоновой</h4>
                         </div>
                         <div class="swiper-slide">
-                            <img class="my__work"  src="img/Layer_1.png" alt="Работа №1">
+                            <img class="my__work" src="img/Layer_1.png" alt="Работа №1">
                             <h4 class="slide__title">Сайт магазина детской одежды</h4>
                         </div>
                         <div class="swiper-slide">
-                            <img class="my__work"  src="img/Layer_3.png" alt="Работа №3">
+                            <img class="my__work" src="img/Layer_3.png" alt="Работа №3">
                             <h4 class="slide__title">Сайт магазина «Рыболов»</h4>
                         </div>
                     </div>
@@ -135,7 +145,8 @@
                 <div class="container">
                     <p class="banner__title">Адаптивная вёрстка под все устройства
                         и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</p>
-                    <p class="banner__description">* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,
+                    <p class="banner__description">* Срок и стоимость могут отличаться от заявленных и рассчитываются
+                        индивидуально,
                         в зависимости от&nbsp;сложности задач.</p>
                 </div>
             </div>
@@ -152,10 +163,12 @@
                 <address class="footer__address address">
                     <ul class="address__list">
                         <li class="address__item">
-                            <a class="address__phone" href="tel:+7(499)995-55-55"><i class="fas fa-phone-alt" aria-label="Телефон"></i> +7 (499) 995-55-77</a>
+                            <a class="address__phone" href="tel:+7(499)995-55-55"><i class="fas fa-phone-alt"
+                                    aria-label="Телефон"></i> +7 (499) 995-55-77</a>
                         </li>
                         <li class="address__item">
-                            <a href="mailto:dmitry@alekseev.com"><i class="fas fa-envelope" aria-label="Почта"></i> dmitry@alekseev.com</a>
+                            <a href="mailto:dmitry@alekseev.com"><i class="fas fa-envelope" aria-label="Почта"></i>
+                                dmitry@alekseev.com</a>
                         </li>
                     </ul>
                 </address>
@@ -163,9 +176,12 @@
                     <button class="social__button" type="submit">Заказать звонок</button>
                     <ul class="social__list">
                         <li class="social__items"><a href="#" class="social__items-vk" title="Логотип ВК"></a></li>
-                        <li class="social__items"><a href="#" class="social__items-facebook" title="Логотип Facebook"></a></li>
-                        <li class="social__items"><a href="#" class="social__items-twitter" title="Логотип Twitter"></a></li>
-                        <li class="social__items"><a href="#" class="social__items-instagram" title="Логотип Instagram"></a></li>
+                        <li class="social__items"><a href="#" class="social__items-facebook"
+                                title="Логотип Facebook"></a></li>
+                        <li class="social__items"><a href="#" class="social__items-twitter" title="Логотип Twitter"></a>
+                        </li>
+                        <li class="social__items"><a href="#" class="social__items-instagram"
+                                title="Логотип Instagram"></a></li>
                     </ul>
                 </div>
             </div>
@@ -174,19 +190,20 @@
             &copy; Дмитрий Алексеев, 2016 – 2018
         </p>
     </footer>
-    <div class="modal modal--call">  
+    <div class="modal modal--call">
         <form action="#" class="modal__form">
-        <h3 class="modal__title">Оставьте заявку:</h3>
+            <h3 class="modal__title">Оставьте заявку:</h3>
+            <a href="" class="modal__close"></a>
             <label class="modal__option">Имя
                 <input type="text" class="modal__area modal__area--name">
             </label>
-            <label  class="modal__option">Номер телефона
+            <label class="modal__option">Номер телефона
                 <input type="number" class="modal__area modal__area--number">
             </label>
-            <label  class="modal__option modal__option--mail">Ваша почта
+            <label class="modal__option modal__option--mail">Ваша почта
                 <input type="email" class="modal__area modal__area--mail">
             </label>
-            <label  class="modal__option modal__option--textarea">Описание проэкта
+            <label class="modal__option modal__option--textarea">Описание проэкта
                 <textarea class="modal__area modal__area--textarea"></textarea>
             </label>
             <div class="modal__buttons">
@@ -194,7 +211,8 @@
                 <button class="modal__remove">Отмена</button>
             </div>
         </form>
-    </div> 
+    </div>
     <div class="modal-overlay"></div>
 </body>
+
 </html>
